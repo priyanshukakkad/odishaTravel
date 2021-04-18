@@ -1,0 +1,274 @@
+<?php
+include_once 'includes/action.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>odisha tourers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body style="background-color: #f0ece364;" onload="loading()">
+  <!--nav-->
+
+  <!-- Nav -->
+  <nav class="navbar navbar-default navbar-expand-lg navbar-light"
+    style="background-color: #ffe6ad57;border-bottom-left-radius: 2rem;border-bottom-right-radius:2rem ;box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="margin-left: 25px" href="#">travel<b>ODISHA</b></a>
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="navbar-toggler-icon"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav" style="margin-top: 35px; font-size: 20px;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Offers</a></li>
+        <li class="dropdown">
+        </li>
+        <li class="active"><a href="#">Pricing</a></li>
+
+      </ul>
+
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a data-toggle="dropdown" style="font-size:20px; margin:20px" class="dropdown-toggle" href="#"><i
+              class="fa fa-user-o"></i> Book Now</a>
+          <ul class="dropdown-menu">
+            <a style="margin:2px"><i>we will contact you</i></a>
+            <li>
+              <form action="include/register.php" class="form-inline login-form"
+                action="/examples/actions/confirmation.php" method="POST">
+
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-check"></i></span>
+                  <input name="firstname" type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-check"></i></span>
+                  <input name="lastname" type="text" class="form-control" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-at"></i></span>
+                  <input name="email" type="text" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input name="password" type="text" class="form-control" placeholder=" Password" required>
+                </div>
+
+
+                <button type="submit" name="submit" class="btn btn-primary">Book Places</button>
+
+
+
+              </form>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+
+    </div>
+  </nav>
+
+
+
+
+  <!-- End nav-bar  -->
+
+  <!-- landing Section  -->
+  <section id="landing" class="landing container">
+    <div class="landing-info">
+      <h1 class="landing-info-heading">Welcome to <br>Odisha</h1>
+      <p class="landing-info-subheading">India's best kept secret</p>
+
+    </div>
+    <div class="landing-img">
+      <img src="https://c4.wallpaperflare.com/wallpaper/423/223/714/photography-india-temple-sun-wallpaper-preview.jpg"
+        alt="">
+    </div>
+  </section>
+  <!-- End landing Section  -->
+  <hr>
+
+  <h1 style="text-align: center; font-size: 55px;"> Places to visit</h1>
+  <!-- place Section  -->
+  <section id="places">
+    <div class="card-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://i.pinimg.com/originals/cf/44/f6/cf44f60e97ae155f9e52e4f82ea24d33.jpg" alt=" Avatar"
+              style="width:100%;height:100%; ;">
+            <h2>JAGANATH PURI
+            </h2>
+          </div>
+          <div class="flip-card-back">
+            <h1>JAGANATH PURI</h1>
+            <p style="font-size: large;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias
+              necessitatibus quia repellat, natus ad. Qui sed, numquam libero similicimus.</p><button
+              class="button button2">Explore Offers</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://www.patratravels.com/blog/wp-content/uploads/2016/08/shanti-stupa.jpg" alt="Avatar"
+              style="width:100%;height:100%;">
+            <h2>BHUBNESHWAR
+            </h2>
+          </div>
+          <div class="flip-card-back">
+            <h1>Bhubneshwar</h1>
+            <p style="font-size: large;">
+              dolores dolorum soluta quaerat nostrum distinctio beatae facere consectetur porro nesciunt alias
+              necessitatibus quia repellat, natus ad. Qui sed, numquam libero similiq.</p><button
+              class="button button2">Explore Offers</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/1200px-Konarka_Temple.jpg"
+              alt="Avatar" style="width:100%;height:100%; ;">
+            <h2>KONARK
+            </h2>
+
+          </div>
+          <div class="flip-card-back">
+            <h1>Konark</h1>
+            <p style="font-size: large;"> Lorem ipsum dolcusamus molestias
+              id blanditiis cupiditate,
+              dolores dolorum soluta quaerat nostrum distinctio beatae facere consectetur porro nesciunt alias
+              necessitatibus quia repellat, natus ad. Qui sed, numquam libero similiqu.</p><button
+              class="button button2">Explore Offers</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/6/28/w1200X800/Three_mor_Hirakud_gates_opened.jpg"
+              alt="Avatar" style="width:100%;height:100%;">
+            <h2>HIRAKUD
+            </h2>
+          </div>
+          <div class="flip-card-back">
+            <h1>Bhubneshwar</h1>
+            <p style="font-size: large;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias
+              id blanditiis cupiditate,
+              dolores dolorum soluta quaerat nostrum distinctio beatae facere consectetur porro nesciunt alias
+              necessitatibus quia re.</p><button class="button button2">Explore Offers</button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://odishatourism.gov.in/content/dam/tourism/home/discover/attractions/beaches/gopalpur/gallery/gopalpur_gallery3.jpg"
+              alt="Avatar" style="width:100%;height:100%; ;">
+            <h2>GOPALPUR
+            </h2>
+
+          </div>
+          <div class="flip-card-back">
+            <h1>Konark</h1>
+            <p style="font-size: large;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias
+              id blanditiis cupiditate, .</p><button class="button button2">Explore
+              Offers</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Chilika_Bhubaneswar.me.jpg" alt="Avatar"
+              style="width:100%;height:100%;">
+            <h2>CHILIKA
+            </h2>
+          </div>
+          <div class="flip-card-back">
+            <h1>Bhubneshwar</h1>
+            <p style="font-size: large;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias
+              id blanditiis cupiditate,
+              dolores dolorum soluta quaerat nostrum distinctio beatae .</p><button class="button button2">Explore
+              Offers</button>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+  </section>
+  <!-- End place Section  -->
+
+
+  <!-- foot section  -->
+  <footer id="footer" class="foot">
+    <div class="foot-contact">
+      <h1 class="foot-contact-heading">Contact Us</h1>
+      <p class="foot-contact-info">Email:<b> odishatravels.com</b></p>
+      <hr class="hrr">
+    </div>
+    <div class="foot-social-follow">
+      <h1 class="foot-social-contact-heading">Follow Us</h1>
+      <div class="foot-social-icon">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+
+      </div>
+    </div>
+  </footer>
+  <!-- End foot section  -->
+  </div>
+
+
+</body>
+
+</html>
